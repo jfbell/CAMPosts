@@ -2976,7 +2976,13 @@ function onClose() {
     writeBlock(gFormat.format(54.4), "P0");
   }
 
-  //writeRetract(X, Y); // return to home
+//   #_______________________________
+
+    writeBlock("T" + toolFormat.format(tool.number), mFormat.format(6));
+    writeBlock("T" + toolFormat.format(0));
+//   #_______________________________
+//   writeRetract(X, Y); // return to home
+//   writeRetract(0, 130); // return to home
   
   onImpliedCommand(COMMAND_END);
   onImpliedCommand(COMMAND_STOP_SPINDLE);
