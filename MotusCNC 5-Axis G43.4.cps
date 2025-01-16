@@ -2978,8 +2978,8 @@ function onClose() {
 
 //   #_______________________________
 
-    writeBlock("T" + toolFormat.format(tool.number), mFormat.format(6));
-    writeBlock("T" + toolFormat.format(0));
+    writeBlock("T" + toolFormat.format(0), mFormat.format(6));
+    writeBlock(gFormat.format(0), "X0", "Y130" );
 //   #_______________________________
 //   writeRetract(X, Y); // return to home
 //   writeRetract(0, 130); // return to home
